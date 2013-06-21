@@ -1,0 +1,29 @@
+<? require_once("dummy/dummy.php") ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Where I Tweak Neat</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body id="home">
+
+<section>
+<!-- Use to Dummy to repeat this 20 to 30 times -->
+    <? while (dumb_luck("20-30")): ?>
+    <article>
+        <h1><? dummy("text@headline") ?></h1>
+        <p><? dummy("text@teaser") ?></p>
+    </article>
+    <? endwhile ?>
+
+</section>
+   
+
+</body>
+</html>

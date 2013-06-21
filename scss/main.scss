@@ -1,0 +1,44 @@
+/* Site: neat.dev */
+/* Author: David Kerns */
+/* Created: June 2013 */
+/* Updated:  */
+
+// Framwork (and settings) Import ------ //
+// The order is important here, ...neat wants it this way //
+@import "bourbon/bourbon";
+@import "settings";
+@import "neat/neat";
+
+
+section {
+  @include outer-container;
+}
+
+
+article  {
+    @include pad();
+    background-color: #eaeaea;
+    height: 20em;
+    margin-bottom: 2em;
+
+    @include media ($mobile) {
+        @include fill-parent();
+    }
+
+
+    @include media ($tablet) {
+        @include span-columns(6);
+        @include omega(2n);
+    }
+
+
+    @include media ($desktop) {
+        @include span-columns(4);
+        @include omega(3n);
+    }
+
+}
+
+
+
+
